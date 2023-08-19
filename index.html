@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo Bank LTD.</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header
+        class=" lg:w-4/5 mt-4 m-auto flex flex-col items-center justify-center text-center text-3xl text-violet-900 font-extrabold bg-cyan-600 rounded-xl">
+        <nav>
+            <h1 class="p-4 text-white text-5xl">Welcome To Yo Bank</h1>
+        </nav>
+        <section id="display-container">
+            <div class="flex lg:flex-row flex-col gap-4 p-10 " id="card-container">
+                <div class="card card-compact bg-cyan-400 shadow-xl p-10">
+                    <div class="card-body">
+                        <h2 class="card-title font-extrabold text-3xl">Deposit</h2>
+                        <p id="deposit" class="text-6xl text-slate-700">00</p>
+                    </div>
+                </div>
+                <div class="card card-compact bg-white shadow-xl p-10">
+                    <div class="card-body">
+                        <h2 class="card-title font-extrabold text-3xl text-red-600">Withdraw</h2>
+                        <p id="withdraw" class="text-6xl  text-red-600">00</p>
+                    </div>
+                </div>
+                <div class="card card-compact bg-green-400 shadow-xl p-10">
+                    <div class="card-body">
+                        <h2 class="card-title font-extrabold text-3xl">Balance</h2>
+                        <p id="balance" class="text-6xl text-slate-700">00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="controls-container" class="mt-28 lg:mt-0">
+            <div class="flex lg:flex-row flex-col gap-16 lg:gap-40 mb-16">
+                <div class="card card-compact  bg-cyan-100 shadow-xl p-10">
+                    <div class="card-body flex items-center gap-5">
+                        <h2 class="card-title font-extrabold text-3xl">Please Deposit</h2>
+                        <input type="number" id="input-deposit" class="w-60 h-14 p-2 text-white text-center text-xl"
+                            placeholder="$ deposit">
+                        <button id="deposit-btn" class="btn-primary w-40 h-16 rounded-lg  text-2xl">Deposit</button>
+                    </div>
+                </div>
+                <div class="card card-compact  bg-cyan-100 shadow-xl p-10">
+                    <div class="card-body flex items-center gap-5">
+                        <h2 class="card-title font-extrabold text-3xl">Please Withdraw</h2>
+                        <input type="number" id="input-withdraw" class="w-60 h-14 p-2 text-red-400 text-center text-xl"
+                            placeholder="$ withdraw">
+                        <button  id="withdraw-btn" class="btn-error w-40 h-16 rounded-lg  text-2xl">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- text-violet-500 border-4 border-violet-500 -->
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
